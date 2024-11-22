@@ -53,7 +53,7 @@
         }
 
         .MR-chatbot header {
-            background-color: var(--blue);
+            background-color: #31363F;
             text-align: center;
             padding: 30px 0;
             position: relative;
@@ -96,7 +96,7 @@
             height: 32px;
             width: 32px;
             align-self: flex-end;
-            background-color: var(--blue);
+            background-color: #31363F;
             color: #fff;
             text-align: center;
             margin: 0 10px 7px 0;
@@ -131,7 +131,7 @@
         }
 
         .MR-chatbot #MR-send-btn {
-            color: var(--blue);
+            color: #31363F;
             font-size: 1.5rem;
             cursor: pointer;
             align-self: center;
@@ -150,7 +150,7 @@
             position: fixed;
             bottom: 40px;
             right: 35px;
-            background-color: var(--blue);
+            background-color: #31363F;
             color: #fff;
             border-radius: 50%;
             width: 50px;
@@ -212,7 +212,7 @@
         .MR-chatbot .botText span {
             line-height: 1.5em;
             display: inline-block;
-            background-color: var(--blue);
+            background-color: #31363F;
             color: #fff;
             padding: 10px;
             border-radius: 8px;
@@ -229,7 +229,7 @@
         .MR-chatbot .placeholder-msg-text {
             line-height: 1.5em;
             display: inline-block;
-            background-color: #1e92f7;
+            background-color: #47484c;
             color: #fff;
             font-size: 14px;
             padding: 10px;
@@ -247,7 +247,7 @@
         .MR-chatbot .incoming-msg-text {
             line-height: 1.5em;
             display: inline-block;
-            background-color: #1e92f7;
+            background-color: #47484c;
             color: #fff;
             font-size: 14px;
             padding: 10px;
@@ -294,7 +294,7 @@
 
         .MR-chatbot .outgoing-msg-text {
             margin-right: 10px;
-            background: #c6c6c6 !important;
+            background: #e3e2e2 !important;
             color: #000;
             font-size: 14px;
             padding: 10px;
@@ -329,7 +329,7 @@
             }
 
             .MR-chatbot header {
-                background-color: var(--blue);
+                background-color: #31363F;
                 text-align: center;
                 padding: 30px 0;
                 position: relative;
@@ -548,8 +548,8 @@ overflow-y: scroll;
 
 
             requiredParams = {
-                client_name: "Unger - UK",
-                service_name: "Unger - UK",
+                client_name: "ModelRocket",
+                service_name: "Sales Knowledge Worker",
                 language: "english",
                 msg: userInputTextValue,
                 flag: flag,
@@ -667,7 +667,7 @@ overflow-y: scroll;
             personImg.className = "person-img";
             personImg.setAttribute(
                 "src",
-                "https://cdn.adraproductstudio.com/person1.png"
+                "https://static.vecteezy.com/system/resources/previews/016/079/150/non_2x/user-profile-account-or-contacts-silhouette-icon-isolated-on-white-background-free-vector.jpg"
             );
             outgoingMsgBox.append(outgoingMsgText, personImg);
 
@@ -724,6 +724,7 @@ overflow-y: scroll;
 
         let country = "https://www.ungerglobal.com/es/servicio/downloads"
         let splittedCountry = country.split("/")
+        console.log(splittedCountry)
         console.log(splittedCountry[3])
 
         console.log(window.location)
