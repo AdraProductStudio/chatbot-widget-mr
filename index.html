@@ -549,7 +549,9 @@ overflow-y: scroll;
 
             requiredParams = {
                 client_name: "ModelRocket",
-                service_name: "Sales Knowledge Worker",
+                service_name: "Sales Knowledge Worker MR",
+                // client_name: "Unger - UK",
+                // service_name: "Unger - UK",
                 language: "english",
                 msg: userInputTextValue,
                 flag: flag,
@@ -610,9 +612,15 @@ overflow-y: scroll;
                     "src",
                     "https://modelrocket.matsuritech.com/static/media/model-rocket-bot.4126f760133924edc8a02fd208464bdf.svg"
                 );
-                const incomingMsgText = document.createElement("p");
+                const incomingMsgText = document.createElement("div");
                 incomingMsgText.className = "incoming-msg-text";
                 incomingMsgText.innerHTML = `${apiData}`;
+                // incomingMsgText.innerHTML = 'This is my url <a href="#">GO TO LINK</a> done';
+                let linkText = incomingMsgText.querySelector('a')
+                if (linkText) {
+                    linkText.style.color = '#fff';
+                    linkText.style.textDecoration = 'underline';
+                }
                 const incomingMsgTime = document.createElement("i");
                 incomingMsgTime.className = "incoming-msg-time";
                 incomingMsgTime.innerText = formatAMPM(new Date());
