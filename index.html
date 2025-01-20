@@ -498,17 +498,19 @@ overflow-y: scroll;
 
         let apiToken;
 
+
         const generateToken = async () => {
             const url = "https://consumerapi.modelrocket.ai/gettoken";
-            const username = "matsuri"; // Replace with your username
+            const username = "9a646bef-1fac-4832-b5d0-778a39711fdb"; // Replace with your username
             const password =
-                "fc153ac36455604c6a6bcb3e22c0a4debfb746d59ad4a33a4b0d50f315206958d78da64e88957993e537e5ef235537a65ac0bc8fbaa725ae3e8e151617e82b81";
+                "93jh7MefEba3v8_EgTpYbnaxQNj-MBbnSusFvX6bxws";
             const base64Credentials = btoa(`${username}:${password}`);
 
             fetch(url, {
                 method: "GET",
                 headers: {
                     Authorization: `Basic ${base64Credentials}`,
+                    "domain": "adraproductstudio.github.io",
                 },
             })
                 .then((response) => {
@@ -529,6 +531,8 @@ overflow-y: scroll;
                     console.error("Error:", error);
                 });
         };
+
+
 
         const welcomeMessage = async () => {
             (async () => {
@@ -564,6 +568,7 @@ overflow-y: scroll;
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${apiToken}`,
+                    "domain": "adraproductstudio.github.io",
                 },
                 body: JSON.stringify(requiredParams),
             })
